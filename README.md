@@ -1,6 +1,25 @@
-# Matplotlibrc: Making Matplotlib Less Uggly, Quickly
+# Making Matplotlib Less Uggly, Quickly
 
-This repository contains matplotlib style configurations (matplotlibrc's) that I have accumulated. Disclaimer: I might have poor taste. However, I feel that disseminating matplotlibrc files allows everyone to use them while preventing people from having to *buy into* some plotting package that has good taste.
+This repository contains matplotlib style configurations (matplotlibrc's) that I have accumulated. Disclaimer: I might have poor taste. However, I feel that disseminating matplotlibrc files allows everyone to use them while preventing people from having to *buy into* some plotting package that has good taste. The styles are heavily borrowed from the [seaborn](https://github.com/mwaskom/seaborn) python package. The gist style was borrowed from [here](https://gist.github.com/huyng/816622).
+
+## Gallery
+
+The gallery is of bar plots, but they really could have any type of plot, e.g. line, histograms, etc.
+
+### ggplot2 (clone)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/ggplot2.png)
+
+### whitegrid
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/whitegrid.png)
+
+### gist
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/gist.png)
+
+### darkgrid
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/darkgrid.png)
+
+### nogrid
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/nogrid.png)
 
 ## Making a Style your Default
 
@@ -24,6 +43,9 @@ will then by default first use the matplotlibrc file in your present working
 directory.
 
 ## Switching Styles Mid-Code
+
+Matplotlib now has a context handler. You can switch between styles by just using `with`
+statements pointing toward your matplotlibrc file.
 
 ```python
 import matplotlib as mpl
@@ -59,18 +81,6 @@ font sizes.
 * axes label font size - 18
 * xtick/ytick font size - 16
 * legend font size - 16
-
-## Gallery
-
-**ggplot2 (clone)***
-
-**whitegrid**
-
-**gist**
-
-**darkgrid**
-
-**nogrid**
 
 ## Fork me?
 
