@@ -7,19 +7,24 @@ This repository contains matplotlib style configurations (matplotlibrc's) that I
 The gallery is of bar plots, but they really could have any type of plot, e.g. line, histograms, etc.
 
 ### ggplot2 (clone)
-![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/ggplot2.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/ggplot2.bar.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/ggplot2.line.png)
 
 ### whitegrid
-![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/whitegrid.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/whitegrid.bar.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/whitegrid.line.png)
 
 ### gist
-![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/gist.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/gist.bar.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/gist.line.png)
 
 ### darkgrid
-![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/darkgrid.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/darkgrid.bar.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/darkgrid.line.png)
 
 ### nogrid
-![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/nogrid.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/nogrid.bar.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/nogrid.line.png)
 
 ## Making a Style your Default
 
