@@ -28,7 +28,7 @@
 # You can also deploy your own backend outside of matplotlib by
 # referring to the module name (which must be in the PYTHONPATH) as
 # 'module://my_backend'
-backend      : agg
+backend      : Agg
 
 # if you are runing pyplot inside a GUI and your backend choice
 # conflicts, we will automatically try and find a compatible one for
@@ -46,7 +46,7 @@ timezone     : UTC        # a pytz timezone string, eg US/Central or Europe/Pari
 ### LINES
 # See http://matplotlib.sourceforge.net/api/artist_api.html#module-matplotlib.lines for more
 # information on line properties.
-lines.linewidth   : 1.0     # line width in points
+lines.linewidth   : 1.5     # line width in points
 #lines.linestyle   : -       # solid line
 # lines.color       : purple
 #lines.marker      : None    # the default marker
@@ -113,7 +113,7 @@ font.family          : sans-serif
 # settings for axes and ticks. Special text sizes can be defined
 # relative to font.size, using the following values: xx-small, x-small,
 # small, medium, large, x-large, xx-large, larger, or smaller
-font.size           : 10.0
+font.size           : 12.0
 # font.serif          : Bitstream Vera Serif, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif
 font.sans-serif     : Helvetica, Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
 #font.cursive        : Apple Chancery, Textile, Zapf Chancery, Sand, cursive
@@ -197,12 +197,12 @@ text.usetex         : True  # use latex for all text handling. The following fon
 # default fontsizes for ticklabels, and so on.  See
 # http://matplotlib.sourceforge.net/api/axes_api.html#module-matplotlib.axes
 #axes.hold           : True    # whether to clear the axes by default on
-axes.facecolor      : eeeeee   # axes background color
-axes.edgecolor      : bcbcbc   # axes edge color
-axes.linewidth      : 1        # edge linewidth
+axes.facecolor      : white    # axes background color
+axes.edgecolor      : CCCCCC   # axes edge color
+axes.linewidth      : 1.7      # edge linewidth
 axes.grid           : True     # display grid or not
-axes.titlesize      : x-large  # fontsize of the axes title
-axes.labelsize      : large    # fontsize of the x any y labels
+axes.titlesize      : 13  # fontsize of the axes title
+axes.labelsize      : 12   # fontsize of the x any y labels
 axes.labelcolor     : 555555
 axes.axisbelow      : True     # whether axis gridlines and ticks are below
                                # the axes elements (lines, text, etc)
@@ -211,7 +211,7 @@ axes.axisbelow      : True     # whether axis gridlines and ticks are below
                                # first or larger than the second
 #axes.unicode_minus  : True    # use unicode for the minus symbol
                                # rather than hypen.  See http://en.wikipedia.org/wiki/Plus_sign#Plus_sign
-axes.color_cycle    : 348ABD, 7A68A6, A60628, 467821, CF4457, 188487, E24A33
+axes.color_cycle    : 348ABD, 7A68A6, A60628, 467821, CF4457, 188487, E24A33, 4B3E6A, 26678C
                       # E24A33 : orange
                       # 7A68A6 : purple
                       # 348ABD : blue
@@ -219,8 +219,14 @@ axes.color_cycle    : 348ABD, 7A68A6, A60628, 467821, CF4457, 188487, E24A33
                       # A60628 : red
                       # CF4457 : pink
                       # 467821 : green
-                                            
-                                            
+                      # 4B3E6A : dark purple
+                      # 26678C : dark blue
+
+# set1 RColorBrewer color
+#axes.color_cycle: E41A1C, 377EB8, 4DAF4A, 984EA3, FF7F00, FFFF33, A65628,  F781BF, 999999 
+
+# Paired RColorBrewer color
+# axes.color_cycle: A6CEE3, 1F78B4, B2DF8A, 33A02C, FB9A99, E31A1C, FDBF6F, FF7F00, CAB2D6                                            
                                             
                                             
                                             # color cycle for plot lines
@@ -238,7 +244,7 @@ xtick.minor.size     : 0      # minor tick size in points
 xtick.major.pad      : 6      # distance to major tick label in points
 xtick.minor.pad      : 6      # distance to the minor tick label in points
 xtick.color          : 555555      # color of the tick labels
-#xtick.labelsize      : medium # fontsize of the tick labels
+xtick.labelsize      : 11   # fontsize of the tick labels
 xtick.direction      : in     # direction: in or out
 
 ytick.major.size     : 0      # major tick size in points
@@ -246,13 +252,15 @@ ytick.minor.size     : 0      # minor tick size in points
 ytick.major.pad      : 6      # distance to major tick label in points
 ytick.minor.pad      : 6      # distance to the minor tick label in points
 ytick.color          : 555555      # color of the tick labels
-#ytick.labelsize      : medium # fontsize of the tick labels
+ytick.labelsize      : 11   # fontsize of the tick labels
 ytick.direction      : in     # direction: in or out
 
 
 ### GRIDS
-#grid.color       :   black   # grid color
+grid.color       :   DDDDDD  # grid color
 #grid.linestyle   :   :       # dotted
+grid.linestyle   :   -       # dotted
+grid.linewidth   :   1.5     # in points
 #grid.linewidth   :   0.5     # in points
 
 ### Legend
@@ -260,7 +268,7 @@ legend.fancybox      : True  # if True, use a rounded box for the
                                # legend, else a rectangle
 #legend.isaxes        : True
 #legend.numpoints     : 2      # the number of points in the legend line
-#legend.fontsize      : large
+legend.fontsize      : 11
 #legend.pad           : 0.0    # deprecated; the fractional whitespace inside the legend border
 #legend.borderpad     : 0.5    # border whitspace in fontsize units
 #legend.markerscale   : 1.0    # the relative size of legend markers vs. original
@@ -274,7 +282,7 @@ legend.fancybox      : True  # if True, use a rounded box for the
 ### FIGURE
 # See http://matplotlib.sourceforge.net/api/figure_api.html#matplotlib.figure.Figure
 figure.figsize   : 11, 8    # figure size in inches
-#figure.dpi       : 80      # figure dots per inch
+# figure.dpi       : 300      # figure dots per inch
 figure.facecolor : white    # figure facecolor; 0.75 is scalar gray
 figure.edgecolor : white   # figure edgecolor
 
