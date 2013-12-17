@@ -65,22 +65,25 @@ look so great on your monitor. I have stratified each style with different
 font sizes.
 
 **Paper font size**
-* title font size - 13 
-* axes label font size - 12
-* xtick/ytick font size - 11
-* legend font size - 11
+* base font size = 12.0
+* title size = x-large
+* axes label size = large
+* xtick/ytick labels = medium
+* legend font size = large
 
 **Talk font size**
-* title font size - 19
-* axes label font size - 16
-* xtick/ytick font size - 14
-* legend font size - 13
+* base font size = 14.0
+* title size = x-large
+* axes label size = large
+* xtick/ytick labels = medium
+* legend font size = medium
 
 **Poster font size**
-* title font size - 22
-* axes label font size - 18
-* xtick/ytick font size - 16
-* legend font size - 16
+* base font size = 16.0
+* title size = xx-large
+* axes label size = x-large
+* xtick/ytick labels = large
+* legend font size = medium
 
 ## Fork me?
 
