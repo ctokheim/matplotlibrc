@@ -11,7 +11,7 @@ The gallery is of bar plots, but they really could have any type of plot, e.g. l
 ![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/ggplot2.line.png)
 
 ### But can ggplot2 do this?
-![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/ggplot2_xkcd.bar.png)
+![](https://raw.github.com/ctokheim/matplotlibrc/xkcd/examples/ggplot2_xkcd.bar.png)
 
 ### whitegrid
 ![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/whitegrid.bar.png)
