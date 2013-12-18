@@ -3,6 +3,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd
 from numpy.random import randn
+import matplotlib.font_manager as fm
 import argparse
 
 def main():
@@ -16,7 +17,9 @@ def main():
     iris = com.load_data('iris')
     feature_means = iris.groupby('Species').mean()
 
-    with mpl.rc_context(fname=args.style):
+    with mpl.rc_context(rc={'text.usetex': False,
+                            'font.family': 'Humor Sans'}, fname=args.style):
+        prop = fm.FontProperties(fname='/home/ctokheim/.fonts/Humor-Sans.ttf')
         # line plot of brownian motion
         df.plot()
         plt.title('Brownian Motion')
@@ -27,9 +30,17 @@ def main():
         plt.close()
 
         # bar plot of iris data set
-        feature_means.plot(kind='bar')
-        plt.title('Mean Features of Iris Data Set')
-        plt.ylabel('Values')
+        plt.xkcd()
+        ax = feature_means.plot(kind='bar')
+        for label in ax.get_xticklabels() :
+            label.set_fontproperties(prop)
+        for label in ax.get_yticklabels() :
+            label.set_fontproperties(prop)
+        handles, labels = ax.get_legend_handles_labels()
+        plt.legend(handles, ['Greeny-ness', 'Edible Score', '. . .', 'Profit?'])
+        plt.xlabel('Species', fontproperties=prop)
+        plt.title('Mean Features of Iris Data Set', fontproperties=prop)
+        plt.ylabel('Y Label?', fontproperties=prop)
         plt.tight_layout()
         plt.savefig(args.output.strip('.png') + '.bar.png')
         plt.close()
