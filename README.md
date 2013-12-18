@@ -6,9 +6,12 @@ This repository contains matplotlib style configurations (matplotlibrc's) that I
 
 The gallery is of bar plots, but they really could have any type of plot, e.g. line, histograms, etc.
 
-### ggplot2 (clone)
+### Obligatory ggplot2 clone . . .
 ![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/ggplot2.bar.png)
 ![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/ggplot2.line.png)
+
+### But can ggplot2 do this?
+![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/ggplot2_xkcd.bar.png)
 
 ### whitegrid
 ![](https://raw.github.com/ctokheim/matplotlibrc/master/examples/whitegrid.bar.png)
