@@ -43,10 +43,10 @@ Then simply replace the default with your style of choice. Say if you
 like the ggplot2 like style then your command will look something like this:
 
 ```bash
-mv ggpot2/ggplot2_paper /your/default/path/matplotlibrc
+cp ggpot2/ggplot2_paper /your/default/path/matplotlibrc
 ```
 
-You can also move a style to your `cwd` and name it `matplotlibrc`. Matplotlib
+You can also copy a style to your `pwd` and name it `matplotlibrc`. Matplotlib
 will then by default first use the matplotlibrc file in your present working
 directory.
 
