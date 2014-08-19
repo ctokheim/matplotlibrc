@@ -2,6 +2,8 @@
 
 This repository contains matplotlib style configurations (matplotlibrc's) that I have accumulated. Disclaimer: I might have poor taste. However, I feel that disseminating matplotlibrc files allows everyone to use them while preventing people from having to *buy into* some plotting package that has good taste. The styles are heavily borrowed from the [seaborn](https://github.com/mwaskom/seaborn) python package. The gist style was borrowed from [here](https://gist.github.com/huyng/816622).
 
+**Note:** The matplotlibrc files have latex enabled by default (`text.usetex: True`). You can disable this setting by commenting out this option.
+
 ## Gallery
 
 The gallery is of bar plots, but they really could have any type of plot, e.g. line, histograms, etc.
