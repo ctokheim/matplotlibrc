@@ -99,3 +99,7 @@ font sizes.
 
 I don't claim I have a good sense of style for plotting. Perhaps you could
 contribute new styles or update the existing ones.
+
+## License
+
+It's [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0).
